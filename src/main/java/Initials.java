@@ -33,7 +33,7 @@ public class Initials {
         JacksonFactory.getDefaultInstance();
 
     /** Global instance of the HTTP transport. */
-    private static HttpTransport HTTP_TRANSPORT;
+    protected static HttpTransport HTTP_TRANSPORT;
     
 
     /** Global instance of the scopes required by this quickstart.
