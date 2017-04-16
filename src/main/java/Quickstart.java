@@ -36,7 +36,7 @@ public class Quickstart extends Initials {
 		FileContent mediaContent = new FileContent("image/jpeg", UPLOAD_FILE);
 		Drive.Files.Create insert = service.files().create(fileMetadata, mediaContent);
 		MediaHttpUploader uploader = insert.getMediaHttpUploader();
-		uploader.setDirectUploadEnabled(true);
+		uploader.setDirectUploadEnabled(true);							//set true for direct upload and false for resume upload
 		uploader.setProgressListener(new UploadProgressListener());
 		insert.execute();
 	}

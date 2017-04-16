@@ -18,11 +18,6 @@ import com.google.api.client.googleapis.media.MediaHttpUploaderProgressListener;
 import java.io.IOException;
 import java.text.NumberFormat;
 
-/**
- * The File Upload Progress Listener.
- *
- * @author rmistry@google.com (Ravi)
- */
 public class UploadProgressListener implements MediaHttpUploaderProgressListener {
 
   @Override
